@@ -8,44 +8,63 @@
 </head>
 <body class="">
 
-
+  <!-- Video -->
    <video
     autoplay
     muted
     loop
     playsinline
-    class="fixed top-0 left-0 w-screen h-screen object-cover z-[-1] scale-150 brightness-75">
+    class="fixed top-0 left-0 w-screen h-screen object-cover z-[-1] scale-150 brightness-75 bg-video filter blur-0 transition duration-1000 ease-in-out">
     <source src="/Src/Videos/videoplayback.mp4" type="video/mp4" />
     Your browser does not support the video tag.
     </video>
 
-    <img src="/Src/Images/MinistiryOfTourismLogo.png" class="w-16 mx-auto mt-5"/>
+   
 
 
     <!-- Navbar -->
-    <nav x-data="{ open: false }"  class="z-10 flex h-auto w-auto shadow-lg rounded-lg justify-between
-      md:h-16">
+    <nav x-data="{ open: false }"  class="z-10 flex h-auto w-auto  rounded-lg justify-between
+      md:h-16 mt-8 text-white text-xs">
       <div class="flex w-full justify-between">
+
+          <!-- List -->
           <div  
           x-show="open" x-transition:enter="transition ease-in-out duration-300"
           class="flex flex-col w-full h-auto
           md:hidden">
               <div class="flex flex-col items-center justify-center gap-2">
                   <a href="">Home</a>
-                  <a href="">About Us</a>
-                  <a href="">Products</a>
-                  <a href="">Contact</a>
-                  <button>Login</button>
-                  <button>Sign Up</button>
+                  <a href="">THE MINISTRY</a>
+                  <a href="">EXPLORE LEBANON</a>
+                  <a href="">ADMINISTRATIVE TRANSACTIONS</a>
+                  <a href="">EVENTS</a>
+                  <a href="">GALLERY</a>
+                  <a href="">NEWS</a>
+                  <a href="">AUTHORITIES & SYNDICATES</a>
+                  <a href="">LEBANON IN THE WORLD</a>
+                  <a href="">CONTACT US</a>
+                  <a href="">ARABIC</a>
               </div>
           </div>
-          <div class=" mx-auto hidden w-3/5 items-center justify-evenly font-semibold
+
+          <!-- horizontal navbar -->
+          <div class=" mx-auto hidden w-full items-center justify-evenly font-semibold
           md:flex">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Products</a>
-            <a href="">Contact</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">HOME</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">THE MINISTRY</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">EXPLORE LEBANON</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">ADMINISTRATIVE TRANSACTIONS</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">EVENTS</a>
+            <img src="/Src/Images/MinistiryOfTourismLogo.png" class="w-16 group-hover:blur-xs group-hover:grayscale"/>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">GALLERY</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">NEWS</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">AUTHORITIES & SYNDICATES</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">LEBANON IN THE WORLD</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">CONTACT US</a>
+            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">ARABIC</a>
           </div>
+
+
           <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white
                           md:hidden
                         " @click="open = !open">
@@ -59,10 +78,50 @@
       </div>
     </nav>
 
+    <div class="h-screen">
+
+    </div>
+
+
+    <!-- Blocks -->
+    <div class="flow-root px-40 blocks-container">
+
+      <!-- explore lebanon -->
+        <div class="w-full h-96 my-20">
+          <div class="float-left h-full  w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-left bg-center bg-">
+          </div>
+        </div>
+
+
+       <div class="w-full  h-96 my-20">
+          <div class="float-right h-full w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-right bg-center bg- ">
+          </div>
+       </div>
+
+        <div class="w-full  h-96 my-20">
+          <div class="float-left  h-full w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-left bg-center bg- ">
+          </div>
+       </div>
+        <div class="w-full  h-96 my-20">
+          <div class="float-right  h-full w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-right bg-center bg- ">
+          </div>
+       </div>
+        <div class="w-full h-96  my-20">
+          <div class="float-left h-full  w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-left bg-center bg- ">
+          </div>
+       </div>
+    
+    </div>
+
+
+    <div class="h-screen">
+
+    </div>
+
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
 
-  <script src="main.js"></script>
+  <script src="/Src/JS/main.js"></script>
   <!-- tailwindcss -->
   <script src="https://cdn.tailwindcss.com"></script>
 
