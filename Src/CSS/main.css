@@ -1,8 +1,8 @@
 
-/* @import "tailwindcss"; */
-/* @tailwind base;
+@import "tailwindcss";
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 .hide-scrollbar {
   overflow: auto;
@@ -14,7 +14,25 @@
   display: none;               /* Chrome, Safari, Opera */
 }
 
+.block-item{
+    --s: 320px;   /* the size of the image */
+  --b: 8px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: white; /* the color */
+  
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s)/2) solid #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: .3s;
 
+}
+
+.block-item:hover{
+   outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
 
 
 

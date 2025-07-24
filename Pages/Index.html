@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="hide-scrollbar">
+<html lang="en" class="hide-scrollbar scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homepage - Ministry of Tourism Lebanon</title>
   <link rel="stylesheet" href="/Src/CSS/main.css" />
+  <link rel="stylesheet" href="/Src/output.css"/>
 </head>
 <body class="">
 
@@ -71,7 +72,7 @@
     muted
     loop
     playsinline
-    class=" top-0 left-0 w-screen h-screen object-cover  scale brightness-75 bg-video filter blur-0 transition duration-500 ease-in-out overflow-hidden">
+    class=" top-0 left-0 w-screen h-screen object-cover   brightness-75 bg-video filter blur-0 transition-all duration-500 ease-in-out overflow-hidden">
     <source src="/Src/Videos/videoplayback.mp4" type="video/mp4" />
     Your browser does not support the video tag.
     </video>
@@ -87,29 +88,41 @@
 
 
     <!-- Blocks -->
-    <div class="flow-root px-40 blocks-container bg-black">
+    <div class=" flex  justify-between px-10 blocks-container bg-black  overflow-hidden">
 
       <!-- explore lebanon -->
-        <div class="w-full h-96 my-20">
-          <div class="relative float-left h-full  w-3/4   bg-[url(/Src/Images/ExploreLebanon.png)] bg-left  brightness-[0.7] bg-fixed hover:brightness-[0.3] filter transition-filter duration-300 ease-in-out">
-            <p class="absolute text-white text-5xl bottom-0 left-0 right-0 text-center">
-              Hello
+        <div class=" h-[25vw] my-10   transition-all duration-500 ease-in-out ">
+          <div class="group relative  h-full   block-item   bg-[url(/Src/Images/ExploreLebanon.png)] bg-   bg-fixed bg-contain filter transition-filter duration-1000 ease-in-out backdrop-brightness-50 rounded-2xl">
+            <p class="absolute w-fit px-4 py-1 mx-auto  text-black text-2xl font-bold  bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out bg-green-500 ">
+              Explore Lebanon
             </p>
           </div>
         </div>
         <!-- <a href="/Src/Images/TheMinistiry.png"></a> -->
 
-       <div class="w-full  h-96 my-20">
-          <div class="float-right h-full w-3/4  bg-white bg-[url(/Src/Images/TheMinistiry.png)] bg-right bg-fixed brightness-[0.7] hover:brightness-[0.3] filter transition-filter duration-300 ease-in-out">
+       <div class="  h-[25vw] my-10 transition-all duration-500 ease-in-out">
+          <div class=" bg-[url(/Src/Images/TheMinistiry.png)] group relative h-full block-item bg-fixed bg-contain filter transition-filter duration-1000 ease-in-out backdrop-brightness-50 rounded-2xl">
+            <p class="absolute w-fit px-4 py-1 mx-auto  text-black text-2xl font-bold  bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out bg-green-500 ">
+              The Ministry
+            </p>
+            
           </div>
        </div>
 
-        <div class="w-full  h-96 my-20">
-          <div class="float-left  h-full w-3/4  bg-white bg-[url(/Src/Images/ViewGallery.png)] bg-cover bg-left bg-fixed brightness-[0.7] hover:brightness-[0.3] filter transition-filter duration-300 ease-in-out ">
+        <div class="  h-[25vw] my-10 transition-all duration-500 ease-in-out">
+          <div class="bg-[url(/Src/Images/ViewGallery.png)] group relative h-full block-item bg-fixed bg-contain filter transition-filter duration-1000 ease-in-out backdrop-brightness-50 rounded-2xl">
+            
+            <p class="absolute w-fit px-4 py-1 mx-auto  text-black text-2xl font-bold  bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out bg-green-500 ">
+              View Gallery
+            </p>
           </div>
        </div>
-        <div class="w-full  h-96 my-20">
-          <div class="float-right  h-full w-3/4  bg-white bg-[url(/Src/Images/News&Circulars.jpg)] bg-right bg-fixed brightness-[0.7]  hover:brightness-[0.3] filter transition-filter duration-300 ease-in-out">
+        <div class="h-[25vw] my-10 transition-all duration-500 ease-in-out">
+          <div class="bg-[url(/Src/Images/News&Circulars.jpg)]  group relative h-full block-item bg-fixed bg-contain filter transition-filter duration-1000 ease-in-out backdrop-brightness-50 rounded-2xl">
+            <p class="absolute w-fit px-4 py-1 mx-auto  text-black text-2xl font-bold  bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out bg-green-500 ">
+              News & Circulars
+            </p>
+            
           </div>
        </div>
     </div>

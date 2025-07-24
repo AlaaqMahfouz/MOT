@@ -35,9 +35,10 @@ NavbarItems.forEach(target => {
   // }
 
   window.addEventListener("wheel", (e) => {
-    const wrapper= document.querySelector('.blocks-container');
+
+    const BlocksContainer= document.querySelector('.blocks-container');
     const video=document.querySelector('.bg-video');
-      const rect = wrapper.getBoundingClientRect();
+      const rect = BlocksContainer.getBoundingClientRect();
       const inView = rect.top <= 0 && rect.bottom > 0;
 
       if (inView) {
@@ -46,4 +47,24 @@ NavbarItems.forEach(target => {
       }else{
         video.classList.remove('brightness-[0.2]');
       }
+
+    //   const BlockItem= document.querySelector('.block-item');
+    //   const rect2 = BlockItem.getBoundingClientRect();
+    //   const inView2 = rect2.top <= 0 && rect2.bottom > 0;
+
+    //   if (inView2) {
+    //     e.preventDefault();
+    //     BlockItem.classList.add('-translate-y-4');
+    //   }else{
+    //     BlockItem.classList.remove('-translate-y-4');
+    //   }
     }, {  });
+
+    // const BlockItems=document.querySelectorAll('.block-item');
+    //  const BlockItemsAll=document.querySelectorAll('.block-item');
+
+    
+    
+
+
+
