@@ -8,22 +8,9 @@
 </head>
 <body class="">
 
-  <!-- Video -->
-   <video
-    autoplay
-    muted
-    loop
-    playsinline
-    class="fixed top-0 left-0 w-screen h-screen object-cover z-[-1] scale-150 brightness-75 bg-video filter blur-0 transition duration-1000 ease-in-out">
-    <source src="/Src/Videos/videoplayback.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-    </video>
-
-   
-
-
+  
     <!-- Navbar -->
-    <nav x-data="{ open: false }"  class="z-10 flex h-auto w-auto  rounded-lg justify-between
+    <nav x-data="{ open: false }"  class="fixed z-[10] flex h-auto w-full  rounded-lg justify-between
       md:h-16 mt-8 text-white text-xs">
       <div class="flex w-full justify-between">
 
@@ -78,39 +65,53 @@
       </div>
     </nav>
 
-    <div class="h-screen">
+  <!-- Video -->
+   <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class=" top-0 left-0 w-screen h-screen object-cover  scale brightness-75 bg-video filter blur-0 transition duration-500 ease-in-out overflow-hidden">
+    <source src="/Src/Videos/videoplayback.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
 
-    </div>
+
+   
+
+
+
+    <!-- <div class="h-screen">
+
+    </div> -->
 
 
     <!-- Blocks -->
-    <div class="flow-root px-40 blocks-container">
+    <div class="flow-root px-40 blocks-container bg-black">
 
       <!-- explore lebanon -->
         <div class="w-full h-96 my-20">
-          <div class="float-left h-full  w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-left bg-center bg-">
+          <div class="relative float-left h-full  w-3/4   bg-[url(/Src/Images/ExploreLebanon.png)] bg-left  brightness-[0.7] bg-fixed hover:brightness-[0.3] filter transition-filter duration-300 ease-in-out">
+            <p class="absolute text-white text-5xl bottom-0 left-0 right-0 text-center">
+              Hello
+            </p>
           </div>
         </div>
-
+        <!-- <a href="/Src/Images/TheMinistiry.png"></a> -->
 
        <div class="w-full  h-96 my-20">
-          <div class="float-right h-full w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-right bg-center bg- ">
+          <div class="float-right h-full w-3/4  bg-white bg-[url(/Src/Images/TheMinistiry.png)] bg-right bg-fixed brightness-[0.7] hover:brightness-[0.3] filter transition-filter duration-300 ease-in-out">
           </div>
        </div>
 
         <div class="w-full  h-96 my-20">
-          <div class="float-left  h-full w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-left bg-center bg- ">
+          <div class="float-left  h-full w-3/4  bg-white bg-[url(/Src/Images/ViewGallery.png)] bg-cover bg-left bg-fixed brightness-[0.7] hover:brightness-[0.3] filter transition-filter duration-300 ease-in-out ">
           </div>
        </div>
         <div class="w-full  h-96 my-20">
-          <div class="float-right  h-full w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-right bg-center bg- ">
+          <div class="float-right  h-full w-3/4  bg-white bg-[url(/Src/Images/News&Circulars.jpg)] bg-right bg-fixed brightness-[0.7]  hover:brightness-[0.3] filter transition-filter duration-300 ease-in-out">
           </div>
        </div>
-        <div class="w-full h-96  my-20">
-          <div class="float-left h-full  w-1/2  bg-white bg-[url(/Src/Images/ExploreLebanon.png)] bg-left bg-center bg- ">
-          </div>
-       </div>
-    
     </div>
 
 
