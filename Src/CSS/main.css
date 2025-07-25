@@ -16,7 +16,7 @@
 
 .block-item{
     --s: 320px;   /* the size of the image */
-  --b: 8px;     /* the border thickness*/
+  --b: 2px;     /* the border thickness*/
   --g: 14px;    /* the gap */
   --c: white; /* the color */
   

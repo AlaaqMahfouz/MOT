@@ -34,19 +34,37 @@ NavbarItems.forEach(target => {
   //   document.querySelector('.blocks-container').addEventListener('DOMMouseScroll',scrollH,false);
   // }
 
-  window.addEventListener("wheel", (e) => {
+  // window.addEventListener("wheel", (e) => {
 
-    const BlocksContainer= document.querySelector('.blocks-container');
-    const video=document.querySelector('.bg-video');
-      const rect = BlocksContainer.getBoundingClientRect();
-      const inView = rect.top <= 0 && rect.bottom > 0;
+  //   const BlocksContainer= document.querySelector('.blocks-container');
+  //   const video=document.querySelector('.bg-video');
+  //     const rect = BlocksContainer.getBoundingClientRect();
+  //     const inView = rect.top <= 0 && rect.bottom > 0;
+  //     // IntersectionObserver(BlocksContainer);
+  //     if (inView) {
+  //       e.preventDefault();
+  //       video.classList.add('brightness-[0.2]');
+  //     }else{
+  //       video.classList.remove('brightness-[0.2]');
+  //     }
+  //   }, {});
 
-      if (inView) {
-        e.preventDefault();
-        video.classList.add('brightness-[0.2]');
-      }else{
-        video.classList.remove('brightness-[0.2]');
-      }
+
+  //   const observer = new IntersectionObserver(
+  //     (entry) => {
+  //         const video=document.querySelector('.bg-video');
+  //         if (entry.isIntersecting) {
+  //           // e.preventDefault();
+  //           video.classList.add('blur-sm', 'grayscale');
+  //         } else {
+  //           video.classList.remove('blur-sm', 'grayscale');
+  //         }
+
+  //     },
+  //     {
+  //       threshold: 0.6, // Trigger when 60% of section is in view
+  //     }
+  //   );
 
     //   const BlockItem= document.querySelector('.block-item');
     //   const rect2 = BlockItem.getBoundingClientRect();
@@ -58,7 +76,6 @@ NavbarItems.forEach(target => {
     //   }else{
     //     BlockItem.classList.remove('-translate-y-4');
     //   }
-    }, {  });
 
     // const BlockItems=document.querySelectorAll('.block-item');
     //  const BlockItemsAll=document.querySelectorAll('.block-item');
