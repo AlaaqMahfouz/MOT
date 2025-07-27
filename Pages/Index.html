@@ -1,143 +1,1298 @@
 <!DOCTYPE html>
-<html lang="en" class="hide-scrollbar scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homepage - Ministry of Tourism Lebanon</title>
-  <link rel="stylesheet" href="/Src/CSS/main.css" />
-  <link rel="stylesheet" href="/Src/output.css"/>
-</head>
-<body class="">
+<html data-scroll-container lang="en" class="hide-scrollbar scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Ministry of Tourism Lebanon</title>
+    <link rel="stylesheet" href="/Src/CSS/main.css" />
+    <link rel="stylesheet" href="/Src/output.css" />
+    <link rel="stylesheet" href="/Src/CSS/Base.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-  
+  <body class="bg-blue-100">
     <!-- Navbar -->
-    <nav x-data="{ open: false }"  class="fixed z-[10] flex h-auto w-full  rounded-lg justify-between
-      md:h-16 mt-8 text-white text-xs">
+    <nav
+      x-data="{ open: false }"
+      class="fixed z-[10] flex h-auto w-full rounded-lg justify-between md:h-16 mt-8 text-white text-xs"
+    >
       <div class="flex w-full justify-between">
-
-          <!-- List -->
-          <div  
-          x-show="open" x-transition:enter="transition ease-in-out duration-300"
-          class="flex flex-col w-full h-auto
-          md:hidden">
-              <div class="flex flex-col items-center justify-center gap-2">
-                  <a href="">Home</a>
-                  <a href="">THE MINISTRY</a>
-                  <a href="">EXPLORE LEBANON</a>
-                  <a href="">ADMINISTRATIVE TRANSACTIONS</a>
-                  <a href="">EVENTS</a>
-                  <a href="">GALLERY</a>
-                  <a href="">NEWS</a>
-                  <a href="">AUTHORITIES & SYNDICATES</a>
-                  <a href="">LEBANON IN THE WORLD</a>
-                  <a href="">CONTACT US</a>
-                  <a href="">ARABIC</a>
-              </div>
+        <!-- List -->
+        <div
+          x-show="open"
+          x-transition:enter="transition ease-in-out duration-300"
+          class="flex flex-col w-full h-auto md:hidden"
+        >
+          <div class="flex flex-col items-center justify-center gap-2">
+            <a href="">Home</a>
+            <a href="">THE MINISTRY</a>
+            <a href="">EXPLORE LEBANON</a>
+            <a href="">ADMINISTRATIVE TRANSACTIONS</a>
+            <a href="">EVENTS</a>
+            <a href="">GALLERY</a>
+            <a href="">NEWS</a>
+            <a href="">AUTHORITIES & SYNDICATES</a>
+            <a href="">LEBANON IN THE WORLD</a>
+            <a href="">CONTACT US</a>
+            <a href="">ARABIC</a>
           </div>
+        </div>
 
-          <!-- horizontal navbar -->
-          <div class=" mx-auto hidden w-full items-center justify-evenly font-semibold
-          md:flex">
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">HOME</a>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">THE MINISTRY</a>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">EXPLORE LEBANON</a>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">ADMINISTRATIVE TRANSACTIONS</a>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">EVENTS</a>
-            <img src="/Src/Images/MinistiryOfTourismLogo.png" class="w-16 group-hover:blur-xs group-hover:grayscale"/>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">GALLERY</a>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">NEWS</a>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">AUTHORITIES & SYNDICATES</a>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">LEBANON IN THE WORLD</a>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">CONTACT US</a>
-            <a class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300" href="">ARABIC</a>
+        <!-- horizontal navbar -->
+        <div
+          class="mx-auto hidden w-full items-center justify-evenly font-semibold md:flex"
+        >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >HOME</a
+          >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >THE MINISTRY</a
+          >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >EXPLORE LEBANON</a
+          >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >ADMINISTRATIVE TRANSACTIONS</a
+          >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >EVENTS</a
+          >
+          <img
+            src="/Src/Images/MinistiryOfTourismLogo.png"
+            class="w-16 group-hover:blur-xs group-hover:grayscale"
+          />
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >GALLERY</a
+          >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >NEWS</a
+          >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >AUTHORITIES & SYNDICATES</a
+          >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >LEBANON IN THE WORLD</a
+          >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >CONTACT US</a
+          >
+          <a
+            class="navbar-item after:bg-white relative after:absolute after:mt-5 after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+            href=""
+            >ARABIC</a
+          >
+        </div>
+
+        <button
+          class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white md:hidden"
+          @click="open = !open"
+        >
+          <span class="sr-only">Open main menu</span>
+          <div
+            class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <span
+              aria-hidden="true"
+              class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+              :class="{'rotate-45': open,' -translate-y-1.5': !open }"
+            ></span>
+            <span
+              aria-hidden="true"
+              class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+              :class="{'opacity-0': open } "
+            ></span>
+            <span
+              aria-hidden="true"
+              class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+              :class="{'-rotate-45': open, ' translate-y-1.5': !open}"
+            ></span>
           </div>
-
-
-          <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white
-                          md:hidden
-                        " @click="open = !open">
-              <span class="sr-only">Open main menu</span>
-              <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
-                  <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-                  <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-                  <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
-              </div>
-          </button>
+        </button>
       </div>
     </nav>
 
-  <!-- Video -->
-   <video
-    autoplay
-    muted
-    loop
-    playsinline
-    class=" top-0 left-0 w-screen h-screen object-cover   brightness-75 bg-video filter overflow-hidden blur- transition-all duration-500 ease-in-out fixed scale-[1.06] ">
-    <source src="/Src/Videos/videoplayback.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-    </video>
+    <!-- Video -->
+    <div class="relative h-screen mb-[20vw]">
+      <video
+        data-scroll
+        data-scroll-speed-2
+        autoplay
+        muted
+        loop
+        playsinline
+        class="top-0 left-0 w-screen h-screen object-cover brightness-75 bg-video filter overflow-hidden blur- transition-all duration-500 ease-in-out scale-[1.06]"
+      >
+        <source src="/Src/Videos/MOT-New-Video.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
+      <h1
+        class="absolute ms-16 mt-16 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl text-white font-bold"
+      >
+        BRINGING YOU CLOSER TO THE HEART OF BEIRUT
+      </h1>
 
-   
-
-
-
-    <div class="h-screen invisible">
-
+      <!-- Social Media Links -->
+      <div
+        class="flex justify-between absolute bottom-10 left-1/2 text-3xl gap-8 items-center"
+      >
+        <a href=""
+          ><i class="fa-brands fa-facebook-f" style="color: #ffffff"></i
+        ></a>
+        <a href=""
+          ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+        ></a>
+        <a href=""
+          ><i class="fa-brands fa-x-twitter" style="color: #ffffff"></i
+        ></a>
+      </div>
     </div>
 
+    <!-- Text in the middle -->
+    <div
+      class="flex flex-col text-6xl w-full text-center mt-40 gap-10 my-[20vw]"
+    >
+      <h1 data-scroll data-scroll-delay="0.2" data-scroll-speed="6">
+        DISCOVER LEBANON
+      </h1>
+      <h1 data-scroll data-scroll-delay="0.2" data-scroll-speed="8">
+        YOUR GATEWAY TO THE CITY OF VIBRANCY
+      </h1>
+    </div>
 
     <!-- Blocks -->
-    <div class=" grid grid-flow-col  justify-between px-40 blocks-container bg-black  overflow-hidden">
-
+    <div
+      class="grid grid-flow-col gap-4 px-10 blocks-container mt-[20vw]"
+      data-scroll
+      data-scroll-speed="2"
+    >
       <!-- explore lebanon -->
-        <div class=" h-[25vw] my-10   transition-all duration-500 ease-in-out ">
-          <div class="group relative  h-full   block-item   bg-[url(/Src/Images/ExploreLebanon.png)] bg-   bg-fixed bg-contain filter transition-filter duration-500 ease-in-out  rounded-2xl">
-            <p class="absolute w-fit px-4 py-1 mx-auto  text-black text-2xl font-bold  bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out bg-green-500 ">
+      <div class="">
+        <div
+          class="h-[25vw] my-10 col-span-1 transition-all duration-1000 ease-in-out"
+        >
+          <div
+            class="group relative block-item bg-[url(/Src/Images/ExploreLebanon.png)] bg-fixed bg-contain filter transition-filter duration-500 ease-in-out rounded-2xl"
+          >
+            <p
+              class="absolute w-fit px-4 py-1 mx-auto text-black text-lg font-bold bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out bg-green-500"
+            >
               Explore Lebanon
             </p>
           </div>
         </div>
-        <!-- <a href="/Src/Images/TheMinistiry.png"></a> -->
-
-       <div class="  h-[25vw] my-10 transition-all duration-500 ease-in-out">
-          <div class=" bg-[url(/Src/Images/TheMinistiry.png)] group relative h-full block-item bg-fixed bg-contain filter transition-filter duration-500 ease-in-out backdrop-brightness-50 rounded-2xl">
-            <p class="absolute w-fit px-4 py-1 mx-auto  text-black text-2xl font-bold  bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out bg-green-500 ">
-              The Ministry
-            </p>
-            
-          </div>
-       </div>
-
-        <div class="  h-[25vw] my-10 transition-all duration-500 ease-in-out">
-          <div class="bg-[url(/Src/Images/ViewGallery.png)] group relative h-full block-item bg-fixed bg-contain filter transition-filter duration-500 ease-in-out backdrop-brightness-50 rounded-2xl">
-            
-            <p class="absolute w-fit px-4 py-1 mx-auto  text-black text-2xl font-bold  bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out bg-green-500 ">
-              View Gallery
-            </p>
-          </div>
-       </div>
-        <div class="h-[25vw] my-10 transition-all duration-500 ease-in-out">
-          <div class="bg-[url(/Src/Images/News&Circulars.jpg)]  group relative h-full block-item bg-fixed bg-contain filter transition-filter duration-500 ease-in-out backdrop-brightness-50 rounded-2xl">
-            <p class="absolute w-fit px-4 py-1 mx-auto  text-black text-2xl font-bold  bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out bg-green-500 ">
-              News & Circulars
-            </p>
-            
-          </div>
-       </div>
+      </div>
+      <!-- <a href="/Src/Images/TheMinistiry.png"></a> -->
+      <div
+        class="col-span-1 h-[25vw] my-10 transition-all duration-500 ease-in-out"
+      >
+        <div
+          class="bg-[url(/Src/Images/TheMinistiry.png)] group relative block-item bg-fixed bg-contain filter transition-filter duration-500 ease-in-out backdrop-brightness-50 rounded-2xl"
+        >
+          <p
+            class="absolute w-fit px-4 py-1 mx-auto text-black text-lg font-bold bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out bg-green-500"
+          >
+            The Ministry
+          </p>
+        </div>
+      </div>
+      <div
+        class="col-span-1 h-[25vw] my-10 transition-all duration-500 ease-in-out"
+      >
+        <div
+          class="bg-[url(/Src/Images/ViewGallery.png)] group relative block-item bg-fixed bg-contain filter transition-filter duration-500 ease-in-out backdrop-brightness-50 rounded-2xl"
+        >
+          <p
+            class="absolute w-fit px-4 py-1 mx-auto text-black text-lg font-bold bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out bg-green-500"
+          >
+            View Gallery
+          </p>
+        </div>
+      </div>
+      <div
+        class="col-span-1 h-[25vw] my-10 transition-all duration-500 ease-in-out"
+      >
+        <div
+          class="bg-[url(/Src/Images/News&Circulars.jpg)] group relative block-item bg-fixed bg-contain filter transition-filter duration-500 ease-in-out backdrop-brightness-50 rounded-2xl"
+        >
+          <p
+            class="absolute w-fit px-4 py-1 mx-auto text-black text-lg font-bold bottom-10 left-0 right-0 text-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out bg-green-500"
+          >
+            News & Circulars
+          </p>
+        </div>
+      </div>
     </div>
 
-
-    <div class="h-screen">
-
+    <!-- Carousel -->
+    <div class="w-1/2 mx-auto relative mt-10" data-scroll data-scroll-speed="4">
+      <div class="swiper fraction-slide-carousel swiper-container relative">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="h-[30vw] flex justify-center items-center bg-[url(/Src/Images/Leb-1.jpg)] bg-cover bg-center m-auto"
+              data-scroll
+              data-scroll-speed="1"
+            >
+              <!-- <span class="text-3xl font-semibold text-indigo-600">Slide 1 </span> -->
+              <!-- <img src="/Src/Images/Leb-1.jpg" class="absolute block w-full h-full" alt="..."> -->
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="h-[30vw] flex justify-center items-center bg-[url(/Src/Images/Leb-1.jpg)] bg-cover bg-center m-auto"
+              data-scroll
+              data-scroll-speed="1"
+            >
+              <!-- <span class="text-3xl font-semibold text-indigo-600">Slide 1 </span> -->
+              <!-- <img src="/Src/Images/Leb-1.jpg" class="absolute block w-full h-full" alt="..."> -->
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="h-[30vw] flex justify-center items-center bg-[url(/Src/Images/Leb-1.jpg)] bg-cover bg-center m-auto"
+              data-scroll
+              data-scroll-speed="1"
+            >
+              <!-- <span class="text-3xl font-semibold text-indigo-600">Slide 1 </span> -->
+              <!-- <img src="/Src/Images/Leb-1.jpg" class="absolute block w-full h-full" alt="..."> -->
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-8 lg:justify-start justify-center">
+          <button
+            id="slider-button-left"
+            class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 hover:bg-indigo-600"
+            data-carousel-prev
+          >
+            <svg
+              class="h-5 w-5 text-indigo-600 group-hover:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            id="slider-button-right"
+            class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 hover:bg-indigo-600"
+            data-carousel-next
+          >
+            <svg
+              class="h-5 w-5 text-indigo-600 group-hover:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- Social Media Link -->
+    <div
+      class="flex flex-col gap-2 w-full text-center text-3xl justify-center items-center"
+    >
+      <h1>VISIT THE MINISTRY SOCIAL MEDIA PAGES</h1>
+      <!-- Social Media Links -->
+      <div class="flex justify-between text-3xl gap-8 w-fit items-center">
+        <a href=""
+          ><i class="fa-brands fa-facebook-f" style="color: black"></i
+        ></a>
+        <a href=""
+          ><i class="fa-brands fa-instagram" style="color: black"></i
+        ></a>
+        <a href=""
+          ><i class="fa-brands fa-x-twitter" style="color: black"></i
+        ></a>
+      </div>
+    </div>
 
+    <!-- Links -->
+    <div class="mt-40 grid grid-flow-row gap-8" data-id="3ee2245" data-element_type="container">
+      <div class="" data-id="939ce4c" data-element_type="container">
+        <div class="" data-widget_type="nav-menu.default">
+          <div class="">
+            <nav aria-label="Menu" class="">
+              <ul id="" class="grid grid-flow-col w-screen text-center">
+                <li class="">
+                  <a href="https://mot.gov.lb/en/the-ministry/" class="elementor-item"
+                    >The Ministry</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="https://mot.gov.lb/en/administrative-transactions/"
+                    class="elementor-item"
+                    >Administrative Transactions</a
+                  >
+                </li>
+                <li class="">
+                  <a href="https://mot.gov.lb/en/explore-lebanon/" class="elementor-item"
+                    >Explore Lebanon</a
+                  >
+                </li>
+                <li class="">
+                  <a href="https://mot.gov.lb/en/events/" class="elementor-item">Events</a>
+                </li>
+                <li class="">
+                  <a href="https://mot.gov.lb/en/gallery/" class="elementor-item">Gallery</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="elementor-element elementor-element-b17ce62 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu"
+          data-id="b17ce62"
+          data-element_type="widget"
+          data-settings='{"layout":"vertical","submenu_icon":{"value":"<svg class=\"e-font-icon-svg e-fas-caret-down\" viewBox=\"0 0 320 512\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path d=\"M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\"><\/path><\/svg>","library":"fa-solid"}}'
+          data-widget_type="nav-menu.default"
+        >
+          <div class="elementor-widget-container">
+            <nav
+              aria-label="Menu"
+              class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none"
+            >
+              <ul class="grid grid-flow-col w-screen text-center">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12592"
+                >
+                  <a
+                    href="https://mot.gov.lb/en/authorities-amp-syndicates/"
+                    class="elementor-item"
+                    >Authorities &amp; Syndicates</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12593"
+                >
+                  <a
+                    href="https://mot.gov.lb/en/lebanon-in-the-world/"
+                    class="elementor-item"
+                    >Lebanon in the World</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12685"
+                >
+                  <a
+                    href="https://mot.gov.lb/en/contact-us/"
+                    class="elementor-item"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div
+        class="has_ae_slider elementor-element elementor-element-e91ec63 e-con-full e-flex ae-bg-gallery-type-default e-con e-child"
+        data-id="e91ec63"
+        data-element_type="container"
+      >
+        <div
+          class="elementor-element elementor-element-eb35f3b color-scheme-inherit text-left elementor-widget elementor-widget-text-editor"
+          data-id="eb35f3b"
+          data-element_type="widget"
+          data-widget_type="text-editor.default"
+        >
+          <div class="elementor-widget-container">
+            <p>JOIN OUR MAILING LIST FOR NEWS &amp; UPDATES</p>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-f4ecc3a elementor-widget elementor-widget-shortcode"
+          data-id="f4ecc3a"
+          data-element_type="widget"
+          data-widget_type="shortcode.default"
+        >
+          <div class="elementor-widget-container">
+            <div class="elementor-shortcode">
+              <script>
+                (function () {
+                  window.mc4wp = window.mc4wp || {
+                    listeners: [],
+                    forms: {
+                      on: function (evt, cb) {
+                        window.mc4wp.listeners.push({
+                          event: evt,
+                          callback: cb,
+                        });
+                      },
+                    },
+                  };
+                })();
+              </script>
+              <!-- Mailchimp for WordPress v4.10.6 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+              <form
+                id="mc4wp-form-1"
+                class="mc4wp-form mc4wp-form-12681 mc4wp-ajax"
+                method="post"
+                data-id="12681"
+                data-name="Footer form"
+              >
+                <div class="mc4wp-form-fields">
+                  <style>
+                    .form-mc-wrapper {
+                      display: flex;
+                      flex-direction: row;
+                      align-items: flex-end;
+                      justify-content: space-between;
+                    }
 
-  <script src="/Src/JS/main.js"></script>
-  <!-- tailwindcss -->
-  <script src="https://cdn.tailwindcss.com"></script>
+                    .form-mc-wrapper input,
+                    .form-mc-wrapper button {
+                      font-family: Montserrat, sans-serif !important;
+                    }
 
-</body>
+                    @media (max-width: 767px) {
+                      .form-mc-wrapper {
+                        flex-wrap: wrap;
+                      }
+                      .form-mc-wrapper > div {
+                        width: 100%;
+                      }
+                      .form-mc-wrapper input {
+                        width: 100%;
+                      }
+                    }
+                  </style>
+                  <div class="form-mc-wrapper">
+                    <div>
+                      <div class="row">
+                        <label class="col-12 col-md-6">
+                          <input
+                            type="text"
+                            name="FNAME"
+                            placeholder="First Name"
+                            required=""
+                          />
+                        </label>
+
+                        <label class="col-12 col-md-6">
+                          <input
+                            type="text"
+                            name="LNAME"
+                            placeholder="Last Name"
+                            required=""
+                          />
+                        </label>
+                        <label class="col-12">
+                          <input
+                            type="email"
+                            name="EMAIL"
+                            placeholder="Your Email Address"
+                            required=""
+                          />
+                        </label>
+                      </div>
+                    </div>
+                    <div>
+                      <input type="submit" value="SUBSCRIBE" />
+                    </div>
+                  </div>
+                </div>
+                <label style="display: none !important"
+                  >Leave this field empty if you're human:
+                  <input
+                    type="text"
+                    name="_mc4wp_honeypot"
+                    value=""
+                    tabindex="-1"
+                    autocomplete="off" /></label
+                ><input
+                  type="hidden"
+                  name="_mc4wp_timestamp"
+                  value="1753514756"
+                /><input
+                  type="hidden"
+                  name="_mc4wp_form_id"
+                  value="12681"
+                /><input
+                  type="hidden"
+                  name="_mc4wp_form_element_id"
+                  value="mc4wp-form-1"
+                />
+                <div class="mc4wp-response"></div>
+              </form>
+              <!-- / Mailchimp for WordPress Plugin -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="has_ae_slider elementor-element elementor-element-20cd78e e-con-full e-flex ae-bg-gallery-type-default e-con e-child"
+        data-id="20cd78e"
+        data-element_type="container"
+      >
+        <div
+          class="elementor-element elementor-element-655173f elementor-widget elementor-widget-wd_text_block"
+          data-id="655173f"
+          data-element_type="widget"
+          data-widget_type="wd_text_block.default"
+        >
+          <div class="elementor-widget-container">
+            <div class="wd-text-block reset-last-child text-center">
+              <p style="text-align: center">
+                <span
+                  style="
+                    color: #ffffff;
+                    font-family: Montserrat, Arial, Helvetica, sans-serif;
+                  "
+                  ><span style="font-size: 18px"
+                    ><b>THIS WEBSITE WAS BUILT IN PARTNERSHIP WITH</b></span
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-2e055e4 elementor-hidden-mobile elementor-widget elementor-widget-image"
+          data-id="2e055e4"
+          data-element_type="widget"
+          data-widget_type="image.default"
+        >
+          <div class="elementor-widget-container">
+            <img
+              width="3609"
+              height="265"
+              src="https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2.png"
+              class="attachment-full size-full wp-image-13678 wd-lazy-fade wd-loaded"
+              alt=""
+              srcset="
+                https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2.png          3609w,
+                https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-300x22.png    300w,
+                https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-1024x75.png  1024w,
+                https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-768x56.png    768w,
+                https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-1536x113.png 1536w,
+                https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-2048x150.png 2048w,
+                https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-600x44.png    600w,
+                https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-150x11.png    150w
+              "
+              sizes="(max-width: 3609px) 100vw, 3609px"
+              data-src="https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2.png"
+              data-srcset="https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2.png 3609w, https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-300x22.png 300w, https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-1024x75.png 1024w, https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-768x56.png 768w, https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-1536x113.png 1536w, https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-2048x150.png 2048w, https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-600x44.png 600w, https://mot.gov.lb/wp-content/uploads/2024/07/MOT-Sponsors-2-150x11.png 150w"
+            />
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-a2b9a5d elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+          data-id="a2b9a5d"
+          data-element_type="widget"
+          data-widget_type="image.default"
+        >
+          <div class="elementor-widget-container">
+            <img
+              width="872"
+              height="513"
+              src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+              class="attachment-full size-full wp-image-13825 wd-lazy-fade"
+              alt=""
+              srcset=""
+              sizes="(max-width: 872px) 100vw, 872px"
+              data-src="https://mot.gov.lb/wp-content/uploads/2024/07/Mobile-Sponsors-1.png"
+              data-srcset="https://mot.gov.lb/wp-content/uploads/2024/07/Mobile-Sponsors-1.png 872w, https://mot.gov.lb/wp-content/uploads/2024/07/Mobile-Sponsors-1-300x176.png 300w, https://mot.gov.lb/wp-content/uploads/2024/07/Mobile-Sponsors-1-768x452.png 768w, https://mot.gov.lb/wp-content/uploads/2024/07/Mobile-Sponsors-1-600x353.png 600w, https://mot.gov.lb/wp-content/uploads/2024/07/Mobile-Sponsors-1-150x88.png 150w"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="has_ae_slider elementor-element elementor-element-44caaa2 e-con-full wd-section-stretch-content e-flex ae-bg-gallery-type-default e-con e-child"
+        data-id="44caaa2"
+        data-element_type="container"
+      >
+        <div
+          class="elementor-element elementor-element-0dbc533 elementor-widget__width-inherit elementor-widget elementor-widget-loop-carousel e-widget-swiper"
+          data-id="0dbc533"
+          data-element_type="widget"
+          data-settings='{"template_id":"9635","slides_to_show":"1","image_spacing_custom":{"unit":"px","size":0,"sizes":[]},"slides_to_show_tablet":"1","autoplay_speed":3000,"speed":1000,"_skin":"post","slides_to_show_mobile":"1","slides_to_scroll":"1","edit_handle_selector":".elementor-widget-container","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","infinite":"yes","offset_sides":"none","image_spacing_custom_tablet":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_mobile":{"unit":"px","size":"","sizes":[]}}'
+          data-widget_type="loop-carousel.post"
+        >
+          <div class="elementor-widget-container">
+            <div
+              class="swiper elementor-loop-container elementor-grid swiper-initialized swiper-horizontal swiper-pointer-events"
+              dir="ltr"
+            >
+              <div
+                class="swiper-wrapper"
+                aria-live="off"
+                id="swiper-wrapper-89db8a9d2b8c10478"
+                style="
+                  transform: translate3d(-4503px, 0px, 0px);
+                  transition-duration: 0ms;
+                "
+              >
+                <div
+                  data-elementor-type="loop-item"
+                  data-elementor-id="9635"
+                  class="elementor elementor-9635 swiper-slide e-loop-item e-loop-item-9638 post-9638 sponsor type-sponsor status-publish has-post-thumbnail hentry swiper-slide-duplicate"
+                  data-elementor-post-type="elementor_library"
+                  role="group"
+                  aria-roledescription="slide"
+                  data-custom-edit-handle="1"
+                  aria-label="5 / 5"
+                  data-swiper-slide-index="4"
+                  aria-hidden="true"
+                  inert=""
+                  style="width: 1501px"
+                >
+                  <div
+                    class="has_ae_slider elementor-element elementor-element-d1d507d e-con-full e-flex ae-bg-gallery-type-default e-con e-parent"
+                    data-id="d1d507d"
+                    data-element_type="container"
+                  >
+                    <div
+                      class="elementor-element elementor-element-2ccea63 elementor-hidden-mobile elementor-widget elementor-widget-image"
+                      data-id="2ccea63"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://wsprfinejewelry.com/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1925"
+                            height="320"
+                            src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+                            class="attachment-full size-full wp-image-13454 wd-lazy-fade"
+                            alt=""
+                            srcset=""
+                            sizes="(max-width: 1925px) 100vw, 1925px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/05/2-1.png"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/05/2-1.png 1925w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-300x50.png 300w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-1024x170.png 1024w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-768x128.png 768w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-1536x255.png 1536w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-600x100.png 600w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-150x25.png 150w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-ec573b6 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+                      data-id="ec573b6"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://wsprfinejewelry.com/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1080"
+                            height="1080"
+                            src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+                            class="attachment-full size-full wp-image-13836 wd-lazy-fade"
+                            alt=""
+                            srcset=""
+                            sizes="(max-width: 1080px) 100vw, 1080px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy.webp"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy.webp 1080w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-300x300.webp 300w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-1024x1024.webp 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-150x150.webp 150w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-768x768.webp 768w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-600x600.webp 600w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <style id="loop-9635">
+                  .elementor-9635 .elementor-element.elementor-element-d1d507d {
+                    --display: flex;
+                    --min-height: 0px;
+                    --border-radius: 0px 0px 0px 0px;
+                    --margin-top: 0px;
+                    --margin-bottom: 0px;
+                    --margin-left: 0px;
+                    --margin-right: 0px;
+                    --padding-top: 0px;
+                    --padding-bottom: 0px;
+                    --padding-left: 0px;
+                    --padding-right: 0px;
+                  }
+                  .elementor-widget-image .widget-image-caption {
+                    color: var(--e-global-color-text);
+                    font-family: var(--e-global-typography-text-font-family),
+                      Sans-serif;
+                    font-weight: var(--e-global-typography-text-font-weight);
+                  }
+                  .elementor-9635
+                    .elementor-element.elementor-element-2ccea63
+                    > .elementor-widget-container {
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 0px 0px 0px;
+                  }
+                  .elementor-9635
+                    .elementor-element.elementor-element-ec573b6
+                    > .elementor-widget-container {
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 0px 0px 0px;
+                  }
+                  @media (max-width: 1024px) {
+                    .elementor-9635
+                      .elementor-element.elementor-element-d1d507d {
+                      --min-height: 0px;
+                    }
+                  }
+                  @media (min-width: 768px) {
+                    .elementor-9635
+                      .elementor-element.elementor-element-d1d507d {
+                      --width: 100%;
+                    }
+                  }
+                </style>
+                <div
+                  data-elementor-type="loop-item"
+                  data-elementor-id="9635"
+                  class="elementor elementor-9635 swiper-slide e-loop-item e-loop-item-13368 post-13368 sponsor type-sponsor status-publish has-post-thumbnail hentry"
+                  data-elementor-post-type="elementor_library"
+                  role="group"
+                  aria-roledescription="slide"
+                  data-custom-edit-handle="1"
+                  aria-label="1 / 5"
+                  data-swiper-slide-index="0"
+                  style="width: 1501px"
+                  aria-hidden="true"
+                  inert=""
+                >
+                  <div
+                    class="has_ae_slider elementor-element elementor-element-d1d507d e-con-full e-flex ae-bg-gallery-type-default e-con e-parent e-lazyloaded"
+                    data-id="d1d507d"
+                    data-element_type="container"
+                  >
+                    <div
+                      class="elementor-element elementor-element-2ccea63 elementor-hidden-mobile elementor-widget elementor-widget-image"
+                      data-id="2ccea63"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://www.mea.com.lb/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1925"
+                            height="320"
+                            src="https://mot.gov.lb/wp-content/uploads/2024/08/2.png"
+                            class="attachment-full size-full wp-image-13853 wd-lazy-fade wd-loaded"
+                            alt=""
+                            srcset="
+                              https://mot.gov.lb/wp-content/uploads/2024/08/2.png          1925w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/2-300x50.png    300w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/2-1024x170.png 1024w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/2-768x128.png   768w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/2-1536x255.png 1536w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/2-600x100.png   600w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/2-150x25.png    150w
+                            "
+                            sizes="(max-width: 1925px) 100vw, 1925px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/2.png"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/2.png 1925w, https://mot.gov.lb/wp-content/uploads/2024/08/2-300x50.png 300w, https://mot.gov.lb/wp-content/uploads/2024/08/2-1024x170.png 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/2-768x128.png 768w, https://mot.gov.lb/wp-content/uploads/2024/08/2-1536x255.png 1536w, https://mot.gov.lb/wp-content/uploads/2024/08/2-600x100.png 600w, https://mot.gov.lb/wp-content/uploads/2024/08/2-150x25.png 150w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-ec573b6 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+                      data-id="ec573b6"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://www.mea.com.lb/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1080"
+                            height="1080"
+                            src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+                            class="attachment-full size-full wp-image-13835 wd-lazy-fade"
+                            alt=""
+                            srcset=""
+                            sizes="(max-width: 1080px) 100vw, 1080px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy.webp"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy.webp 1080w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-300x300.webp 300w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-1024x1024.webp 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-150x150.webp 150w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-768x768.webp 768w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-600x600.webp 600w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-elementor-type="loop-item"
+                  data-elementor-id="9635"
+                  class="elementor elementor-9635 swiper-slide e-loop-item e-loop-item-13364 post-13364 sponsor type-sponsor status-publish has-post-thumbnail hentry swiper-slide-prev"
+                  data-elementor-post-type="elementor_library"
+                  role="group"
+                  aria-roledescription="slide"
+                  data-custom-edit-handle="1"
+                  aria-label="2 / 5"
+                  data-swiper-slide-index="1"
+                  style="width: 1501px"
+                  aria-hidden="true"
+                  inert=""
+                >
+                  <div
+                    class="has_ae_slider elementor-element elementor-element-d1d507d e-con-full e-flex ae-bg-gallery-type-default e-con e-parent e-lazyloaded"
+                    data-id="d1d507d"
+                    data-element_type="container"
+                  >
+                    <div
+                      class="elementor-element elementor-element-2ccea63 elementor-hidden-mobile elementor-widget elementor-widget-image"
+                      data-id="2ccea63"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://interestingtimes.com/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1925"
+                            height="320"
+                            src="https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2.png"
+                            class="attachment-full size-full wp-image-13674 wd-lazy-fade wd-loaded"
+                            alt=""
+                            srcset="
+                              https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2.png          1925w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-300x50.png    300w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-1024x170.png 1024w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-768x128.png   768w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-1536x255.png 1536w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-600x100.png   600w,
+                              https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-150x25.png    150w
+                            "
+                            sizes="(max-width: 1925px) 100vw, 1925px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2.png"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2.png 1925w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-300x50.png 300w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-1024x170.png 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-768x128.png 768w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-1536x255.png 1536w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-600x100.png 600w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT-Sponsors-2-150x25.png 150w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-ec573b6 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+                      data-id="ec573b6"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://interestingtimes.com/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1080"
+                            height="1080"
+                            src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+                            class="attachment-full size-full wp-image-13837 wd-lazy-fade"
+                            alt=""
+                            srcset=""
+                            sizes="(max-width: 1080px) 100vw, 1080px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/MOT5-Copy.webp"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/MOT5-Copy.webp 1080w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT5-Copy-300x300.webp 300w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT5-Copy-1024x1024.webp 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT5-Copy-150x150.webp 150w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT5-Copy-768x768.webp 768w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT5-Copy-600x600.webp 600w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-elementor-type="loop-item"
+                  data-elementor-id="9635"
+                  class="elementor elementor-9635 swiper-slide e-loop-item e-loop-item-9640 post-9640 sponsor type-sponsor status-publish has-post-thumbnail hentry swiper-slide-active"
+                  data-elementor-post-type="elementor_library"
+                  role="group"
+                  aria-roledescription="slide"
+                  data-custom-edit-handle="1"
+                  aria-label="3 / 5"
+                  data-swiper-slide-index="2"
+                  style="width: 1501px"
+                >
+                  <div
+                    class="has_ae_slider elementor-element elementor-element-d1d507d e-con-full e-flex ae-bg-gallery-type-default e-con e-parent e-lazyloaded"
+                    data-id="d1d507d"
+                    data-element_type="container"
+                  >
+                    <div
+                      class="elementor-element elementor-element-2ccea63 elementor-hidden-mobile elementor-widget elementor-widget-image"
+                      data-id="2ccea63"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://ixsir.com/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1925"
+                            height="320"
+                            src="https://mot.gov.lb/wp-content/uploads/2024/05/3-1.png"
+                            class="attachment-full size-full wp-image-13854 wd-lazy-fade wd-loaded"
+                            alt=""
+                            srcset="
+                              https://mot.gov.lb/wp-content/uploads/2024/05/3-1.png          1925w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/3-1-300x50.png    300w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/3-1-1024x170.png 1024w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/3-1-768x128.png   768w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/3-1-1536x255.png 1536w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/3-1-600x100.png   600w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/3-1-150x25.png    150w
+                            "
+                            sizes="(max-width: 1925px) 100vw, 1925px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/05/3-1.png"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/05/3-1.png 1925w, https://mot.gov.lb/wp-content/uploads/2024/05/3-1-300x50.png 300w, https://mot.gov.lb/wp-content/uploads/2024/05/3-1-1024x170.png 1024w, https://mot.gov.lb/wp-content/uploads/2024/05/3-1-768x128.png 768w, https://mot.gov.lb/wp-content/uploads/2024/05/3-1-1536x255.png 1536w, https://mot.gov.lb/wp-content/uploads/2024/05/3-1-600x100.png 600w, https://mot.gov.lb/wp-content/uploads/2024/05/3-1-150x25.png 150w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-ec573b6 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+                      data-id="ec573b6"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://ixsir.com/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1080"
+                            height="1080"
+                            src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+                            class="attachment-full size-full wp-image-13833 wd-lazy-fade"
+                            alt=""
+                            srcset=""
+                            sizes="(max-width: 1080px) 100vw, 1080px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/MOT1-Copy.webp"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/MOT1-Copy.webp 1080w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT1-Copy-300x300.webp 300w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT1-Copy-1024x1024.webp 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT1-Copy-150x150.webp 150w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT1-Copy-768x768.webp 768w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT1-Copy-600x600.webp 600w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-elementor-type="loop-item"
+                  data-elementor-id="9635"
+                  class="elementor elementor-9635 swiper-slide e-loop-item e-loop-item-9639 post-9639 sponsor type-sponsor status-publish has-post-thumbnail hentry swiper-slide-next"
+                  data-elementor-post-type="elementor_library"
+                  role="group"
+                  aria-roledescription="slide"
+                  data-custom-edit-handle="1"
+                  aria-label="4 / 5"
+                  data-swiper-slide-index="3"
+                  style="width: 1501px"
+                >
+                  <div
+                    class="has_ae_slider elementor-element elementor-element-d1d507d e-con-full e-flex ae-bg-gallery-type-default e-con e-parent e-lazyloaded"
+                    data-id="d1d507d"
+                    data-element_type="container"
+                  >
+                    <div
+                      class="elementor-element elementor-element-2ccea63 elementor-hidden-mobile elementor-widget elementor-widget-image"
+                      data-id="2ccea63"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://www.casinoduliban.com.lb/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1925"
+                            height="320"
+                            src="https://mot.gov.lb/wp-content/uploads/2024/05/2.png"
+                            class="attachment-full size-full wp-image-12868 wd-lazy-fade wd-loaded"
+                            alt=""
+                            srcset="
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2.png          1925w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-300x50.png    300w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-1024x170.png 1024w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-768x128.png   768w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-1536x255.png 1536w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-600x100.png   600w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-150x25.png    150w
+                            "
+                            sizes="(max-width: 1925px) 100vw, 1925px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/05/2.png"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/05/2.png 1925w, https://mot.gov.lb/wp-content/uploads/2024/05/2-300x50.png 300w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1024x170.png 1024w, https://mot.gov.lb/wp-content/uploads/2024/05/2-768x128.png 768w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1536x255.png 1536w, https://mot.gov.lb/wp-content/uploads/2024/05/2-600x100.png 600w, https://mot.gov.lb/wp-content/uploads/2024/05/2-150x25.png 150w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-ec573b6 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+                      data-id="ec573b6"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://www.casinoduliban.com.lb/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1080"
+                            height="1080"
+                            src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+                            class="attachment-full size-full wp-image-13834 wd-lazy-fade"
+                            alt=""
+                            srcset=""
+                            sizes="(max-width: 1080px) 100vw, 1080px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/MOT2-Copy.webp"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/MOT2-Copy.webp 1080w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT2-Copy-300x300.webp 300w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT2-Copy-1024x1024.webp 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT2-Copy-150x150.webp 150w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT2-Copy-768x768.webp 768w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT2-Copy-600x600.webp 600w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-elementor-type="loop-item"
+                  data-elementor-id="9635"
+                  class="elementor elementor-9635 swiper-slide e-loop-item e-loop-item-9638 post-9638 sponsor type-sponsor status-publish has-post-thumbnail hentry"
+                  data-elementor-post-type="elementor_library"
+                  role="group"
+                  aria-roledescription="slide"
+                  data-custom-edit-handle="1"
+                  aria-label="5 / 5"
+                  data-swiper-slide-index="4"
+                  style="width: 1501px"
+                >
+                  <div
+                    class="has_ae_slider elementor-element elementor-element-d1d507d e-con-full e-flex ae-bg-gallery-type-default e-con e-parent e-lazyloaded"
+                    data-id="d1d507d"
+                    data-element_type="container"
+                  >
+                    <div
+                      class="elementor-element elementor-element-2ccea63 elementor-hidden-mobile elementor-widget elementor-widget-image"
+                      data-id="2ccea63"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://wsprfinejewelry.com/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1925"
+                            height="320"
+                            src="https://mot.gov.lb/wp-content/uploads/2024/05/2-1.png"
+                            class="attachment-full size-full wp-image-13454 wd-lazy-fade wd-loaded"
+                            alt=""
+                            srcset="
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-1.png          1925w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-1-300x50.png    300w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-1-1024x170.png 1024w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-1-768x128.png   768w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-1-1536x255.png 1536w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-1-600x100.png   600w,
+                              https://mot.gov.lb/wp-content/uploads/2024/05/2-1-150x25.png    150w
+                            "
+                            sizes="(max-width: 1925px) 100vw, 1925px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/05/2-1.png"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/05/2-1.png 1925w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-300x50.png 300w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-1024x170.png 1024w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-768x128.png 768w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-1536x255.png 1536w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-600x100.png 600w, https://mot.gov.lb/wp-content/uploads/2024/05/2-1-150x25.png 150w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-ec573b6 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+                      data-id="ec573b6"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://wsprfinejewelry.com/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1080"
+                            height="1080"
+                            src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+                            class="attachment-full size-full wp-image-13836 wd-lazy-fade"
+                            alt=""
+                            srcset=""
+                            sizes="(max-width: 1080px) 100vw, 1080px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy.webp"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy.webp 1080w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-300x300.webp 300w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-1024x1024.webp 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-150x150.webp 150w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-768x768.webp 768w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT4-Copy-600x600.webp 600w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-elementor-type="loop-item"
+                  data-elementor-id="9635"
+                  class="elementor elementor-9635 swiper-slide e-loop-item e-loop-item-13368 post-13368 sponsor type-sponsor status-publish has-post-thumbnail hentry swiper-slide-duplicate"
+                  data-elementor-post-type="elementor_library"
+                  role="group"
+                  aria-roledescription="slide"
+                  data-custom-edit-handle="1"
+                  aria-label="1 / 5"
+                  data-swiper-slide-index="0"
+                  style="width: 1501px"
+                >
+                  <div
+                    class="has_ae_slider elementor-element elementor-element-d1d507d e-con-full e-flex ae-bg-gallery-type-default e-con e-parent"
+                    data-id="d1d507d"
+                    data-element_type="container"
+                  >
+                    <div
+                      class="elementor-element elementor-element-2ccea63 elementor-hidden-mobile elementor-widget elementor-widget-image"
+                      data-id="2ccea63"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://www.mea.com.lb/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1925"
+                            height="320"
+                            src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+                            class="attachment-full size-full wp-image-13853 wd-lazy-fade"
+                            alt=""
+                            srcset=""
+                            sizes="(max-width: 1925px) 100vw, 1925px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/2.png"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/2.png 1925w, https://mot.gov.lb/wp-content/uploads/2024/08/2-300x50.png 300w, https://mot.gov.lb/wp-content/uploads/2024/08/2-1024x170.png 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/2-768x128.png 768w, https://mot.gov.lb/wp-content/uploads/2024/08/2-1536x255.png 1536w, https://mot.gov.lb/wp-content/uploads/2024/08/2-600x100.png 600w, https://mot.gov.lb/wp-content/uploads/2024/08/2-150x25.png 150w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-ec573b6 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+                      data-id="ec573b6"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <a
+                          href="https://www.mea.com.lb/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          <img
+                            width="1080"
+                            height="1080"
+                            src="https://mot.gov.lb/wp-content/themes/woodmart/images/lazy.svg"
+                            class="attachment-full size-full wp-image-13835 wd-lazy-fade"
+                            alt=""
+                            srcset=""
+                            sizes="(max-width: 1080px) 100vw, 1080px"
+                            data-src="https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy.webp"
+                            data-srcset="https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy.webp 1080w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-300x300.webp 300w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-1024x1024.webp 1024w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-150x150.webp 150w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-768x768.webp 768w, https://mot.gov.lb/wp-content/uploads/2024/08/MOT3-Copy-600x600.webp 600w"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="swiper-notification"
+                aria-live="assertive"
+                aria-atomic="true"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-screen"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <script type="module" src="/Src/JS/main.js"></script>
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c190f807b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
